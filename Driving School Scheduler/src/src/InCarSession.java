@@ -26,7 +26,7 @@ public class InCarSession {
 	}
 	
 	public String toString() {
-		return "Date: " + this.date + "\n" + this.slot1.toString() + "\n" + this.slot2.toString() + "\nInstructed by: " + this.instructor.toString() + "\n\n";
+		return "Date: " + this.date + "\nFrom " + this.slot1.starttime + " To " + this.slot2.endtime + "\nInstructed by: " + this.instructor.toString() + "\n\n";
 	}
 
 }
