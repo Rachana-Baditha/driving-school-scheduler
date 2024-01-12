@@ -9,12 +9,9 @@ public class InCarSession {
 	DrivingSlot slot1;
 	DrivingSlot slot2;
 	
-	Instructor instructor;
+	String instructor;
 	
-	Student studentone;
-	Student studenttwo;
-	
-	InCarSession(LocalDate date,LocalTime starttime, Instructor instructor) {
+	InCarSession(LocalDate date,LocalTime starttime, String instructor) {
 		
 		this.date = date;
 		

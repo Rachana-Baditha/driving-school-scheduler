@@ -9,12 +9,12 @@ public class DrivingSlot {
 	LocalTime starttime;
 	LocalTime endtime;
 	
-	Instructor instructor;
+	String instructor;
 	
 	Student driver; 
-	Student observer;  
+	Student observer;
 	
-	DrivingSlot(LocalDate date,LocalTime starttime, Instructor instructor){
+	DrivingSlot(LocalDate date,LocalTime starttime, String instructor){
 		
 		this.date = date;
 		this.starttime = starttime;

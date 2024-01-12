@@ -12,6 +12,7 @@ public class Requirements {
 	 * 			One instructor
 	 * 			One or two students
 	 *			Can have one or two student drivers, but maximum one adult driver
+	 *			Only displays if slots are available
 	 * 
 	 * 		Student:
 	 * 			Can be an adult or student driver
@@ -22,11 +23,12 @@ public class Requirements {
 	 * 		Instructor:
 	 * 			Takes lessons
 	 * 
+	 * 
 	 * */
 	
 	public static void main(String args[]) {
 		
-		InCarSession testSession = new InCarSession(LocalDate.now(), LocalTime.of(1, 00), new Instructor("Frank"));
+		InCarSession testSession = new InCarSession(LocalDate.now(), LocalTime.of(1, 00), "Frank");
 		
 		System.out.print(testSession.toString());
 		
