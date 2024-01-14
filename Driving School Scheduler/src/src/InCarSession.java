@@ -2,28 +2,26 @@ package src;
 
 import java.time.*;
 
-public class InCarSession {
+public class InCarSession{
+
 	
 	LocalDate date;
+	Instructor instructor;
 	
-	DrivingSlot slot1;
-	DrivingSlot slot2;
+	LocalTime startFirst;
+	Student studentFirst;
 	
-	String instructor;
+	LocalTime startSecond;
+	Student studentSecond;
 	
-	InCarSession(LocalDate date,LocalTime starttime, String instructor) {
-		
-		this.date = date;
-		
-		this.slot1 = new DrivingSlot(date,starttime, instructor);
-		this.slot2 = new DrivingSlot(date,starttime.plusHours(1), instructor);
-		
-		this.instructor = instructor;
-		
+	
+	InCarSession(){
+		// TODO
 	}
 	
-	public String toString() {
-		return "Date: " + this.date + "\nFrom " + this.slot1.starttime + " To " + this.slot2.endtime + "\nInstructed by: " + this.instructor.toString() + "\n\n";
+	boolean addStudent(Student student) {
+		return false;
 	}
-
+		
+	
 }

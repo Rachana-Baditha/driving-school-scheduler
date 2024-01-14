@@ -28,7 +28,7 @@ public class Requirements {
 	
 	public static void main(String args[]) {
 		
-		InCarSession testSession = new InCarSession(LocalDate.now(), LocalTime.of(1, 00), "Frank");
+		InCarSession testSession = new InCarSession();
 		
 		System.out.print(testSession.toString());
 		

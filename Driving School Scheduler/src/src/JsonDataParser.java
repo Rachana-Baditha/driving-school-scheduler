@@ -23,7 +23,7 @@ public class JsonDataParser {
         String starttime = (String) session.get("starttime");  
         String[] splittime = starttime.split(":");
          
-        InCarSession sessionObj = new InCarSession(LocalDate.now(),LocalTime.of(Integer.parseInt(splittime[0]), Integer.parseInt(splittime[1])), instructor);
+        InCarSession sessionObj = new InCarSession();
         
         System.out.print(sessionObj.toString());
         

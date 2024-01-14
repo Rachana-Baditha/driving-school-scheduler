@@ -19,13 +19,18 @@ public class Instructor extends User {
 		return false;
 	}
 	
+	static boolean removeDrivingSlot() {
+		// TODO
+		return false;
+	}
+	
 	static boolean printWeeklySchedule() {
 		// TODO
 		return false;
 	}
 
 	@Override
-	boolean getSystemOptions(Scanner keyboard) {
+	boolean getSystemOptions(Scanner keyboard, Database database) {
 		
 		System.out.println("SELECT:\n1. ADD Driving Slot\n2. PRINT Weekly Schedule\n3.EXIT");
 		

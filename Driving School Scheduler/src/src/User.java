@@ -9,7 +9,7 @@ public abstract class User {
 	protected String password;
 	protected String permissions;
 	
-	abstract boolean getSystemOptions(Scanner keyboard);
+	abstract boolean getSystemOptions(Scanner keyboard, Database database);
 
 
 	protected String getName() {

@@ -4,7 +4,7 @@ import java.util.*;
 public class LoginSystem {
 	
 	
-	static User executeLoginScreen(Scanner keyboard) {
+	static User executeLoginScreen(Scanner keyboard, Database database) {
 		
 		String tempUsername;
 		String tempPassword;
@@ -15,7 +15,7 @@ public class LoginSystem {
 		System.out.println("Password: ");
 		tempPassword = keyboard.nextLine();
 		
-		for(User user: Database.getUserlist()) {
+		for(User user: database.getUserlist()) {
 			if(user.getUsername() == tempUsername && user.getPassword() == tempPassword) {
 				return user;
 			}

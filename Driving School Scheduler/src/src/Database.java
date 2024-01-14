@@ -4,14 +4,15 @@ import java.util.*;
 
 public class Database {
 	
-	private static List<User> userlist;
+	private List<User> userlist;
+	private List<InCarSession> drivingschedule;
 
-	public static List<User> getUserlist() {
+	public List<User> getUserlist() {
 		return userlist;
 	}
 
-	public static void setUserlist(List<User> userlist) {
-		Database.userlist = userlist;
+	public void setUserlist(List<User> userlist) {
+		this.userlist = userlist;
 	}
 	
 	public static List<User> loadUserlist() {

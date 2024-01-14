@@ -12,7 +12,7 @@ public class Student extends User{
 	}
 
 	@Override
-	boolean getSystemOptions(Scanner keyboard) {
+	boolean getSystemOptions(Scanner keyboard, Database database) {
 		// TODO Auto-generated method stub
 		return false;
 	}
