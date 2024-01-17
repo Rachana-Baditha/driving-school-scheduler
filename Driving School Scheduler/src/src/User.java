@@ -7,7 +7,7 @@ public abstract class User {
 	protected String name;
 	protected String username;
 	protected String password;
-	protected String permissions;
+	protected String permissions;  // To Past Rachana: What is permissions???
 	
 	abstract boolean getSystemOptions(Scanner keyboard, Database database);
 

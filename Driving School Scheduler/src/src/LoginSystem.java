@@ -16,7 +16,8 @@ public class LoginSystem {
 		tempPassword = keyboard.nextLine();
 		
 		for(User user: database.getUserlist()) {
-			if(user.getUsername() == tempUsername && user.getPassword() == tempPassword) {
+			System.out.println(user.getUsername()+ " " +user.getPassword());
+			if(user.getUsername().equals(tempUsername) && user.getPassword().equals(tempPassword)) {
 				return user;
 			}
 		}

@@ -14,9 +14,15 @@ public class InCarSession{
 	LocalTime startSecond;
 	Student studentSecond;
 	
-	
 	InCarSession(){
-		// TODO
+		
+	}
+	
+	InCarSession(LocalDate date, Instructor instructor, LocalTime startTime){
+		this.date = date;
+		this.instructor = instructor;
+		this.startFirst = startTime;
+		this.startSecond = startTime.plusHours(1);
 	}
 	
 	boolean addStudent(Student student) {

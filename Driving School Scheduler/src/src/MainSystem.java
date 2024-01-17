@@ -14,9 +14,13 @@ public class MainSystem {
 		
 		if( theUser != null) {
 			
-			System.out.print("Login Success!");
+			for(int i=0; i<20; i++) {
+				System.out.println("...");
+			}
 			
-			System.out.print("Hello " + theUser.getName());
+			System.out.println("Login Success!\n");
+			
+			System.out.println("Hello " + theUser.getName());
 			
 			while(theUser.getSystemOptions(keyboard, database)) {} // Different depending on the user type
 		}
